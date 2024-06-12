@@ -1,0 +1,34 @@
+{
+  "-MiBvEFJTI3FmTzDu_3V": {
+    "vocab_id": "-MiBv9_aOEJQWoobjz_U",
+    "firebaseKey": "-MiBvEFJTI3FmTzDu_3V",
+    "description": "Local Area Network",
+    "category": "Network",
+    "title": "LAN",
+    "uid": ""
+  },
+  "-MiBvW8ME_DvO2GzwQ8D": {
+    "vocab_id": "-MiBvQiWr6XNwNa1i3-0",
+    "firebaseKey": "-MiBvW8ME_DvO2GzwQ8D",
+    "description": "Wide Area Network",
+    "category":"Network",
+    "title": "WAN",
+    "uid": ""
+  },
+  "-MiBvf3bIyooE6x4nLLB": {
+    "vocab_id": "-MiBvQiWr6XNwNa1i3-0",
+    "firebaseKey": "-MiBvf3bIyooE6x4nLLB",
+    "description": "Network Address Translation",
+    "category":"Network",
+    "title": "NAT",
+    "uid": ""
+  },
+  "-MiBwAF5wOY00AYJm7cR": {
+    "vocab_id": "-MiBw4tCvNZd23yTVDQw",
+    "firebaseKey": "-MiBwAF5wOY00AYJm7cR",
+    "description": "Dynamic Host Configuration Protocol",
+    "category":"Network",
+    "title": "DHCP",
+    "uid": ""
+  }
+}
