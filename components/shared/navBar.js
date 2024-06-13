@@ -4,7 +4,7 @@ const navBar = () => {
   const domString = `
     <nav class="navbar fixed-top navbar-expand-lg mb-5" id="navbarStyle">
     <div class="container-fluid" id="containerFluid">
-        <a class="navbar-brand title" href="" id="logo2">Teach US Tech</a>
+        <a class="navbar-brand title" href="" id="logo2">LOGO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

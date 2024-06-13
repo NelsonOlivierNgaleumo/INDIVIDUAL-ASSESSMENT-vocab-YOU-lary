@@ -17,7 +17,7 @@ const navigationEvents = (user) => {
     // CLICK EVENT EDITING/UPDATING A VOCAB CARD
     if (e.target.id.includes('edit-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((bookObj) => addVocabForm(bookObj));
+      getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj));
     }
   });
 };
