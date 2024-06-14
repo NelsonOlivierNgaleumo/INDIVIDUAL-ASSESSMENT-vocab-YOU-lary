@@ -14,7 +14,7 @@ const domEvents = (user) => {
     }
     if (e.target.id.includes('logo')) {
       clearDom();
-      getVocab(user).then((vocabWords) => showVocab(vocabWords));
+      getVocab(user).then((vocab) => showVocab(vocab));
     }
   });
 };

@@ -1,4 +1,6 @@
-import { deleteSingleVocab, getSingleVocab, getVocab } from '../api/vocabData';
+import {
+  deleteSingleVocab, getNetwork, getSecurity, getSingleVocab, getVocab
+} from '../api/vocabData';
 import addVocabForm from '../components/forms/addVocab';
 import showVocab from '../pages/vocab';
 
@@ -17,8 +19,20 @@ const navigationEvents = (user) => {
     // CLICK EVENT EDITING/UPDATING A VOCAB CARD
     if (e.target.id.includes('edit-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((bookObj) => addVocabForm(bookObj));
+      getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj));
     }
+  });
+  // ALL VOCAB CARDS
+  document.querySelector('#show-all-cards').addEventListener('click', () => {
+    getVocab().then(showVocab);
+  });
+
+  document.querySelector('#network').addEventListener('click', () => {
+    getNetwork().then(showVocab);
+  });
+  // ALL VOCAB CARDS
+  document.querySelector('#security').addEventListener('click', () => {
+    getSecurity().then(showVocab);
   });
 };
 
