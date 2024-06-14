@@ -11,7 +11,7 @@
     "vocab_id": "-MiBvQiWr6XNwNa1i3-0",
     "firebaseKey": "-MiBvW8ME_DvO2GzwQ8D",
     "description": "Wide Area Network",
-    "category":"Network",
+    "category":"Security",
     "title": "WAN",
     "uid": ""
   },
@@ -19,7 +19,7 @@
     "vocab_id": "-MiBvQiWr6XNwNa1i3-0",
     "firebaseKey": "-MiBvf3bIyooE6x4nLLB",
     "description": "Network Address Translation",
-    "category":"Network",
+    "category":"Security",
     "title": "NAT",
     "uid": ""
   },

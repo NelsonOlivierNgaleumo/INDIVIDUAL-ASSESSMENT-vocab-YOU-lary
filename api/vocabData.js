@@ -18,8 +18,8 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
 });
 
 // GET Vocab Card
-const getVocab = (uid) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
+const getVocab = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -70,6 +70,35 @@ const deleteSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getNetwork = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const js = Object.values(data).filter((obj) => obj.category === 'Network');
+      resolve(js);
+    })
+    .catch(reject);
+});
+const getSecurity = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const html = Object.values(data).filter((obj) => obj.category === 'Security');
+      resolve(html);
+    })
+    .catch(reject);
+});
+
 export {
-  createVocab, deleteSingleVocab, getSingleVocab, getVocab, updateVocab
+  createVocab, deleteSingleVocab, getSingleVocab, getVocab, updateVocab, getNetwork, getSecurity
 };
