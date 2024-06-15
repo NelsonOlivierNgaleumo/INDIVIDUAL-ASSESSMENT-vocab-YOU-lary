@@ -5,7 +5,8 @@
     "description": "Local Area Network",
     "category": "Network",
     "title": "LAN",
-    "uid": ""
+    "uid": "",
+    "timeSubmitted": "6/12/2024"
   },
   "-MiBvW8ME_DvO2GzwQ8D": {
     "vocab_id": "-MiBvQiWr6XNwNa1i3-0",
@@ -13,7 +14,8 @@
     "description": "Wide Area Network",
     "category":"Security",
     "title": "WAN",
-    "uid": ""
+    "uid": "",
+    "timeSubmitted": "6/12/2024"
   },
   "-MiBvf3bIyooE6x4nLLB": {
     "vocab_id": "-MiBvQiWr6XNwNa1i3-0",
@@ -21,7 +23,8 @@
     "description": "Network Address Translation",
     "category":"Security",
     "title": "NAT",
-    "uid": ""
+    "uid": "",
+    "timeSubmitted": "6/12/2024"
   },
   "-MiBwAF5wOY00AYJm7cR": {
     "vocab_id": "-MiBw4tCvNZd23yTVDQw",
@@ -29,6 +32,7 @@
     "description": "Dynamic Host Configuration Protocol",
     "category":"Network",
     "title": "DHCP",
-    "uid": ""
+    "uid": "",
+    "timeSubmitted": "6/12/2024"
   }
 }

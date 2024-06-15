@@ -28,11 +28,11 @@ const navigationEvents = (user) => {
   });
 
   document.querySelector('#network').addEventListener('click', () => {
-    getNetwork().then(showVocab);
+    getNetwork(user.uid).then(showVocab);
   });
   // ALL VOCAB CARDS
   document.querySelector('#security').addEventListener('click', () => {
-    getSecurity().then(showVocab);
+    getSecurity(user.uid).then(showVocab);
   });
 };
 

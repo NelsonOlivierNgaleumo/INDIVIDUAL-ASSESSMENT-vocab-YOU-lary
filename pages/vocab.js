@@ -15,6 +15,7 @@ const showVocab = (array) => {
         <i id="edit-vocab-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"> Edit</i>
         <i id="delete-vocab-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"> Delete</i>
       </div>
+      <div class="card-filter">Time Submitted: ${item.timeSubmitted}</div>
     </div>
     `;
   });
