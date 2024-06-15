@@ -2,16 +2,44 @@
 @import "~bootstrap/scss/bootstrap";
 
 
+
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: rgb(102, 172, 184);
+  color: rgb(39, 34, 34);
   text-align: center;
   margin-top: 100px;
 }
 
-#main-container {
+#app{
+  background-color: rgb(131, 171, 187);
+}
+
+
+#store {
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100dvh;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+
+  .card {
+    width: 300px;
+    margin: 5px;
+
+    .sale-badge {
+      font-size: 1em;
+      background-color: blue;
+    }
+    .fav-badge{
+      font-size: 1em;
+      background-color: #03A9F4;
+    }
+  }
+
+  .table {
+    margin: 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
