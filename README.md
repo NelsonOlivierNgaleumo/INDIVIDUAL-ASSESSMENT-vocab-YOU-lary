@@ -78,3 +78,8 @@ init();
 ## More Info and Resources on Webpack
 - Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
 - [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-2-patterns-and-tools/chapters/webpack-configure.md)
+
+
+##Loom Video Walkthrough of my App
+
+- Visit https://www.loom.com/share/35ca2947227f492a98fcb0067bb2362b?sid=0ff46540-8dfb-4c49-b688-ec21c495ed2f
