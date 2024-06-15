@@ -70,8 +70,8 @@ const deleteSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const getNetwork = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json`, {
+const getNetwork = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -84,8 +84,8 @@ const getNetwork = () => new Promise((resolve, reject) => {
     })
     .catch(reject);
 });
-const getSecurity = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json`, {
+const getSecurity = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
